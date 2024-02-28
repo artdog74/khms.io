@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chapter 8 - Project 1 Complete</title>
+
+
+    <!-- 
+
+      Instructions: 
+
+      Check out the images to see how the page should change with each media query: 
+
+      ch8-1.PNG
+      ch8-2.PNG
+      ch8-3.PNG
+      ch8-4.PNG
+      ch8-5.PNG
+
+      1. Create a new media query for each of these display sizes: 
+
+      iphone 5: 320x568
+      iphone 6: 375x667
+      Google Nexus 6: 412x732
+      desktop small: 550px width
+      desktop large: 950px width
+
+      2. Please use a CSS comment to identify which device each media query is targeting. Good to place this just above the media query.
+
+      3. Change to background color with media query.
+
+      4. With the desktops, add the 'Reeds-in-Wind-Cinemagraph.gif' as the background image, and set its' size to 'cover.'
+
+      5. Increase the width of the main tag with each media query. 
+
+      6. On small desktops, set the text color to #1CAD22.
+
+      7. On large desktops, set the text color back to #FFFFFF and set the font family to Calligraffitti. Use Google fonts to insert it.
+
+
+      hint code: 
+
+      background-image: url("images/Reeds-in-Wind-Cinemagraph.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 400px;
+      width: 500px;
+
+    -->
+
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+
+* {margin: 0px;}
+
+main {
+  margin: 10px auto; width: 600px; padding: 30px;  margin-top: 0px; 
+  background-color: olive; display: block;
+}
+
+/* iphone 5 */
+@media screen and (max-width: 320px) {
+  main {
+    background-color: #88A5E0;
+    width: 210px;
+  }
+}
+
+
+/* iphone 6 */
+@media screen and (min-width: 321px) {
+  main {
+    background-color: red;
+    width: 300px;
+  }
+}
+
+
+/* Google Nexus 6 */
+@media screen and (min-width: 478px) {
+  main {
+    background-image: url("images/Reeds-in-Wind-Cinemagraph.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 400px;
+    width: 420px;
+    color: #ffffff;
+  }
+}
+
+/* desktop small */
+@media screen and (min-width: 550px) {
+  main {
+    background-image: url("images/Reeds-in-Wind-Cinemagraph.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 400px;
+    width: 600px;
+    color: #1CAD22;
+  }
+}
+
+/* desktop large */
+@media screen and (min-width: 950px) {
+  main {
+    background-image: url("images/Reeds-in-Wind-Cinemagraph.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 400px;
+    width: 1000px;
+    color: #ffffff;
+    font-family: Calligraffitti;
+  }
+}
+
+
+
+
+
+
+</style>
+	
+</head>
+<body>
+
+  <main>
+
+    <h1>Media Queries</h1>
+    <p>
+      Media allows you to make your pages to change to fit any device.
+    </p>
+
+  </main>
+
+</body>
+</html>
